@@ -1,0 +1,11 @@
+<h1>FITH EXAMPLE</h1>
+<p>Parent interacts with child via local variable</p>
+
+
+<h3>Countdown to Liftoff (via local variable)</h3>
+<!--With #timer reference we can use our child method-->
+<button (click)="timer.start()">Start</button>
+<button (click)="timer.stop()">Stop</button>
+<div class="seconds">{{timer.seconds}}</div>
+<!--With #timer reference we can use our child method-->
+<app-fith-child #timer></app-fith-child>

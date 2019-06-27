@@ -1,0 +1,11 @@
+<h1>SECOND EXAMPLE</h1>
+<p>Passing data from father to child and gettin them in get and set method</p>
+<h2><a routerLink="/" routerLinkActive="active">First example</a></h2>
+<h2><a routerLink="/secondExample" routerLinkActive="active">Second example</a></h2>
+<h2><a routerLink="/thirdExample" routerLinkActive="active">Third example</a></h2>
+<h2><a routerLink="/fourthExample" routerLinkActive="active">Fourth example</a></h2>
+<h2><a routerLink="/fithExample" routerLinkActive="active">Fith example</a></h2>
+<h2><a routerLink="/sixthExample" routerLinkActive="active">Sixth example</a></h2>
+
+<h2>Master controls {{names.length}} names</h2>
+<app-second-child *ngFor="let name of names" [name]="name"></app-second-child>

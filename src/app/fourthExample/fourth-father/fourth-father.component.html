@@ -1,0 +1,12 @@
+<h1>FOURTH EXAMPLE</h1>
+<p>Parent listen to child event</p>
+
+
+<h2>Should mankind colonize the Universe?</h2>
+<h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+<!--sending voters to child component and getting response child method called voted
+on the father event called onVoted-->
+<app-fourth-child *ngFor="let voter of voters" [name]="voter" (voted)="onVoted($event)">
+  <h2>Should mankind colonize the Universe?</h2>
+  <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+  </app-fourth-child>
